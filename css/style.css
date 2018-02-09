@@ -31,6 +31,6 @@ footer {
     padding: 5px 10px;
 }
 
-h3, article h4 {
-    color: rgb(48, 100, 129);
+h4 {
+   color: red;
 }
