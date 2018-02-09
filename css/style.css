@@ -11,11 +11,6 @@ figcaption {
     text-align: center;
 }
 
-figure.firstcode {
-    height: min-content;
-    width: min-content;
-}
-
 article > time {
     float: right;
     font-size: 0.75em;
