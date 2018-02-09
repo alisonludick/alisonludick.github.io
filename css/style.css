@@ -1,0 +1,32 @@
+header {
+    background-color: black;
+    color: #EFEFEF;
+    padding: 20px 50px; 
+    font-family: fantasy;
+    text-align: center;
+}
+
+figcaption {
+    font-family: fantasy;
+    text-align: center;
+}
+
+figure.firstcode {
+    height: min-content;
+    width: min-content;
+}
+
+article > time {
+    float: right;
+    font-size: 0.75em;
+    font-weight: lighter;
+}
+
+main {
+    padding: 5px 10px;
+}
+
+footer {
+    background-color: #b1abab;
+    padding: 5px 10px;
+}
