@@ -6,10 +6,6 @@ header {
     text-align: center;
 }
 
-header > h2 {
-    color: orange;
-}
-
 figcaption {
     font-family: fantasy;
     text-align: center;
