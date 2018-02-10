@@ -15,6 +15,7 @@ article > time {
     float: right;
     font-size: 0.75em;
     font-weight: lighter;
+    color: orange;
 }
 
 article > p {
