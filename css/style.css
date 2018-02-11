@@ -28,6 +28,7 @@ figure.langicon {
 
 img.map {
     width: 100%;
+    display: block;
 }
 
 article > time {
