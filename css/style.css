@@ -6,6 +6,10 @@ header {
     text-align: center;    
 }
 
+body {
+    background: url('https://github.com/alisonludick/FirstProject/blob/master/img/firstcode.png') no-repeat center center fixed;
+}
+
 section {
     padding: 0.5em;
     margin: 0.5em;
