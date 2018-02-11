@@ -27,8 +27,8 @@ figure.langicon {
 }
 
 img.map {
-    padding: 0.5em;
-    margin: 0.5em;
+    padding: 0 0.5em 0 0;
+    margin: 0 0.5em 0 0;
     width: 75em;
 }
 
