@@ -7,7 +7,7 @@ header {
 }
 
 body {
-    background: url('https://github.com/alisonludick/FirstProject/blob/master/img/firstcode.png') no-repeat center center fixed;
+    background: url("https://github.com/alisonludick/FirstProject/blob/master/img/firstcode.png") no-repeat center center fixed;
 }
 
 section {
