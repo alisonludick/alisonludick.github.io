@@ -134,11 +134,14 @@
                 <p>
                     If I had to add a button to my page, this is what it would look like. </br>
                     For more information, click here:
-                    <script>
-                        alert( 'Thank you for viewing my Learning To Code page!' );                        
-                    </script>
+                    
                 </p>        
-                    <button>More Information</button>            
+                    <button type="button" onclick="clickHandler()">More Information</button>  
+                    <script>
+                        function clickHandler() {
+                            alert("Thank you for requesting more information. You will be contacted shortly." );
+                        }                          
+                    </script>          
             </div>
             </br>
         <footer>
