@@ -63,3 +63,21 @@ h4 {
    margin: 0em;
    padding: 0em;
 }
+
+div > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0em;
+}
+
+#textbutton button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1em;
+    color: blueviolet;
+    padding: 0.5em 0.8em;
+    border: blueviolet solid;
+    border-radius: 1em;
+}
+
+a {
+    font-style: italic;
+}
