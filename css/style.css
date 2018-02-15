@@ -33,6 +33,7 @@ figure.langicon {
 }
 
 .map .imagetop {
+    width:100%;
     display: none;
     position: absolute;
     top: 0;
