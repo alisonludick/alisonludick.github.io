@@ -26,9 +26,22 @@ figure.langicon {
     margin: 0.75em;   
 }
 
-img.map {
+.map {
     width: 100%;
-    display: block;
+    position: relative;
+    display: inline-block;      
+}
+
+.map .imagetop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50;
+    z-index: 99;
+}
+
+.map:hover .imagetop {
+    display: inline-block;
 }
 
 article > time {
