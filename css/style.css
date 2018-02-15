@@ -29,7 +29,10 @@ figure.langicon {
 .map {
     width: 100%;
     position: relative;
-    display: inline-block;      
+    display: inline-block;
+    top: 0;
+    left: 50;
+    z-index: 99;
 }
 
 .map .imagetop {
