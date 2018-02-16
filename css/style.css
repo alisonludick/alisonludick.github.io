@@ -27,14 +27,15 @@ figure.langicon {
 }
 
 .map {
-    max-width: 75%;
+    width: auto;
     height: auto;
-    margin: 0 auto;
-    display: inline-block; 
-    -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+  }
 
 article > time {
     float: right;
