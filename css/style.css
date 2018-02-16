@@ -26,25 +26,6 @@ figure.langicon {
     margin: 0.75em;   
 }
 
-/* #map {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin: 0 auto; 
-}  */
-
-/* #map {
-    object-fit: scale-down;
-    display: contents;
-    justify-content: center;    
-} */
-
-/* img#map {
-    object-fit: contain;
-    display: contents;
-    object-position: 50% 50%;    
-} */
-
 img#map {
     width: 100%;
     display: block;
