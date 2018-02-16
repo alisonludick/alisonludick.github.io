@@ -29,7 +29,7 @@ figure.langicon {
 .map {
     max-width: 75%;
     height: auto;
-    margin: 1em 0 1em 0;
+    margin: 0 auto 0 auto;
     display: inline-block;    
 }
 
