@@ -6,10 +6,6 @@ header {
     text-align: center;    
 }
 
-/* body {
-    width:100%;
-} */
-
 section {
     padding: 0.5em;
     margin: 0.5em;
@@ -30,17 +26,6 @@ figure.langicon {
     margin: 0.75em;   
 }
 
-/* .map {
-    width: 75%;
-    height: auto;
-    display: -webkit-flex;
-    display:         flex;
-    -webkit-align-items: center;
-            align-items: center;
-    -webkit-justify-content: center;
-            justify-content: center;
-  } */
-
 /* #map {
     display:flex;
     justify-content:center;
@@ -54,10 +39,15 @@ figure.langicon {
     justify-content: center;    
 } */
 
-#map {
+/* img#map {
     object-fit: contain;
     display: contents;
     object-position: 50% 50%;    
+} */
+
+img#map {
+    width: 100%;
+    display: block;
 }
 
 article > time {
