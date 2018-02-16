@@ -1,5 +1,4 @@
 header {
-    width: 100%;
     background-color: black;
     color: #FFFFFF;
     padding: 1em 2em; 
@@ -7,9 +6,9 @@ header {
     text-align: center;    
 }
 
-body {
+/* body {
     width:100%;
-}
+} */
 
 section {
     padding: 0.5em;
