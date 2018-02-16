@@ -48,10 +48,17 @@ figure.langicon {
     margin: 0 auto; 
 }  */
 
-#map {
+/* #map {
     object-fit: scale-down;
     display: contents;
     justify-content: center;    
+} */
+
+#map {
+    object-fit: fill;
+    display: contents;
+    object-position: 50% 50%;
+    align-self: auto;
 }
 
 article > time {
