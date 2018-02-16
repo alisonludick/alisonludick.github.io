@@ -26,7 +26,7 @@ figure.langicon {
     margin: 0.75em;   
 }
 
-.map {
+/* .map {
     width: 75%;
     height: auto;
     display: -webkit-flex;
@@ -35,7 +35,13 @@ figure.langicon {
             align-items: center;
     -webkit-justify-content: center;
             justify-content: center;
-  }
+  } */
+
+.map {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+} 
 
 article > time {
     float: right;
