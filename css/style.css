@@ -51,9 +51,9 @@ figure.langicon {
 
 #map {
     object-fit: contain;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: contents;
+    justify-content: center;
+    align-items: center;
 }
 
 article > time {
