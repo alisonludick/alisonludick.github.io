@@ -42,12 +42,16 @@ figure.langicon {
             justify-content: center;
   } */
 
-#map {
+/* #map {
     display:flex;
     justify-content:center;
     align-items:center;
     margin: 0 auto; 
-} 
+}  */
+
+#map {
+    object-fit: fill;
+}
 
 article > time {
     float: right;
