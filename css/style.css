@@ -27,7 +27,7 @@ figure.langicon {
 }
 
 .map {
-    width: 100%;
+    width: 75%;
     height: auto;
     display: -webkit-flex;
     display:         flex;
