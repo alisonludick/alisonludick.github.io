@@ -55,10 +55,9 @@ figure.langicon {
 } */
 
 #map {
-    object-fit: fill;
+    object-fit: contain;
     display: contents;
-    object-position: 50% 50%;
-    align-self: auto;
+    object-position: 50% 50%;    
 }
 
 article > time {
