@@ -49,10 +49,9 @@ figure.langicon {
 }  */
 
 #map {
-    object-fit: contain;
+    object-fit: scale-down;
     display: contents;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;    
 }
 
 article > time {
