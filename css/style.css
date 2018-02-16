@@ -50,7 +50,7 @@ figure.langicon {
 }  */
 
 #map {
-    object-fit: fill;
+    object-fit: contain;
 }
 
 article > time {
