@@ -30,7 +30,7 @@ figure.langicon {
     max-width: 75%;
     height: auto;
     margin: 1em 0 1em 0;
-    display: block;    
+    display: inline-block;    
 }
 
 article > time {
