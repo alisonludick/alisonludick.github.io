@@ -29,8 +29,11 @@ figure.langicon {
 .map {
     max-width: 75%;
     height: auto;
-    margin: 0 auto 0 auto;
-    display: inline-block;    
+    margin: 0 auto;
+    display: inline-block; 
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 article > time {
