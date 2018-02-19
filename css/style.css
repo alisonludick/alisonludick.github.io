@@ -56,10 +56,11 @@ footer {
     padding: 0.5em;
 }
 
-h4 {
+article h4 {
    color: orange;
    font-family: fantasy;
    font-weight: bolder;
+   font-size: large;
    margin: 0em;
    padding: 0em;
 }
