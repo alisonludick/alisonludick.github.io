@@ -56,6 +56,10 @@ footer {
     padding: 0.5em;
 }
 
+footer:hover {
+    color: blueviolet;
+}
+
 article h4 {
    color: orange;
    font-family: fantasy;
@@ -77,6 +81,11 @@ div > p {
     padding: 0.5em 0.8em;
     border: blueviolet solid;
     border-radius: 1em;
+}
+
+#textbutton button:hover {
+    background-color: orange;
+    border-style: double;
 }
 
 a {
