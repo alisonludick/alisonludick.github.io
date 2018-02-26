@@ -57,10 +57,6 @@ footer {
     text-align: center;
 }
 
-footer:hover {
-    color: blueviolet;
-}
-
 article h4 {
    color: orange;
    font-family: fantasy;
