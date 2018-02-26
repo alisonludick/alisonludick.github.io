@@ -100,9 +100,14 @@ a:visited  {
     color: blueviolet;
 }
 
-a#footerlink {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
-    font-style: normal;
-    text-decoration: none;
+div.footerlink {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: small;
+   font-style: normal;
+   text-decoration: none;     
+}
+
+.footerlink a {
+   padding: 0.2em 0.5em;
+   margin: 0.2em;
 }
