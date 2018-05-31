@@ -252,17 +252,73 @@
                     
                    </p>
               </article>
-                   <p>
-                     <a href="#top">Back to the top</a>
-                   </p>
+              
               <article>
                 <time datetime="2018-02-10">Saturday, Feb 10</time>
                 <h4>My Second Attempt - This Time A Multiple Slideshow</h4>
                 <p>
-                    The first slide show is a pup named Fia, who was the best Poodle I have ever known! The second slide show comes from my first trip to Thailand.
-                </p>
+                  The first slide show is a pup named Fia, who was the best Poodle I have ever known! The second slide show comes from my first trip to Thailand.
+                  <div class="slideshow-container">
+                      <div class="mySlides1">
+                        <img src="img/fia_snow.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides1">
+                        <img src="img/fia_summer.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides1">
+                        <img src="img/fia_relax.jpg" style="width:100%">
+                      </div>
+
+                      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                   </div>
+                  <br>
+                   <div class="slideshow-container">
+                      <div class="mySlides2">
+                        <img src="img/tuktuk.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides2">
+                        <img src="img/beach.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides2">
+                        <img src="img/canoes.jpg" style="width:100%">
+                      </div>
+
+                      <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                   </div>
+
+                    <script>
+                    var slideIndex = [1,1];
+                    var slideId = ["mySlides1", "mySlides2"]
+                    showSlides(1, 0);
+                    showSlides(1, 1);
+
+                    function plusSlides(n, no) {
+                      showSlides(slideIndex[no] += n, no);
+                    }
+
+                    function showSlides(n, no) {
+                      var i;
+                      var x = document.getElementsByClassName(slideId[no]);
+                      if (n > x.length) {slideIndex[no] = 1}    
+                      if (n < 1) {slideIndex[no] = x.length}
+                      for (i = 0; i < x.length; i++) {
+                         x[i].style.display = "none";  
+                      }
+                      x[slideIndex[no]-1].style.display = "block";  
+                    }
+                    </script>
+                   </p>
                     
-               </article>
+              </article>
+               <p>
+                 <a href="#top">Back to the top</a>
+               </p>
         
             </main>
             <div id="textbutton">
