@@ -184,6 +184,8 @@ img {vertical-align: middle;}
 }
 
 /* Code for Multiple Carousel */
+
+/* 
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides1, .mySlides2 {display: none}
@@ -222,7 +224,7 @@ img {vertical-align: middle;}
 /*.prev:hover, .next:hover {
   background-color: #f1f1f1;
   color: black;
-}*/
+}*/*/
 
 div.footerlink {
    font-family: Verdana, Geneva, Tahoma, sans-serif;
