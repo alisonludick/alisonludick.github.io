@@ -265,6 +265,11 @@ body {
   padding-bottom: 0;
 }
 
+.info-button {
+    padding: 0.5em;
+    margin:0.5em;
+}
+
 div.footerlink {
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    font-size: small;
