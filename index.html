@@ -262,7 +262,11 @@
                   The Calculator! 
                   (It's only a simple one, using integers exculisvley, but it was so much fun to build.) 
                 </p>
-                   <div class="calc">
+                  
+                  
+                  
+                  
+                  <div class="calc">
                         <section class="screen">
                             0
                         </section>
@@ -295,7 +299,106 @@
                                 <button class="calc-button">=</button>
                             </div>
                         </section>
-                       <style>
+                      <style>
+                            let runningTotal = 0;
+                            let buffer = "0";
+                            let previousOperator;
+                            const screen = document.querySelector(".screen");
+
+                            function buttonClick(value) {
+                              if (isNaN(parseInt(value))) {
+                                handleSymbol(value);
+                              } else {
+                                handleNumber(value);
+                              }
+                              rerender();
+                            }
+
+                            function handleNumber(value) {
+                              if (buffer === "0") {
+                                buffer = value;
+                              } else {
+                                buffer += value;
+                              }
+                            }
+
+                            function handleMath(value) {
+                              if (buffer === "0") {
+                                // do nothing
+                                return;
+                              }
+
+                              const intBuffer = parseInt(buffer);
+                              if (runningTotal === 0) {
+                                runningTotal = intBuffer;
+                              } else {
+                                flushOperation(intBuffer);
+                              }
+
+                              previousOperator = value;
+
+                              buffer = "0";
+                            }
+
+                            function flushOperation(intBuffer) {
+                              if (previousOperator === "+") {
+                                runningTotal += intBuffer;
+                              } else if (previousOperator === "-") {
+                                runningTotal -= intBuffer;
+                              } else if (previousOperator === "×") {
+                                runningTotal *= intBuffer;
+                              } else {
+                                runningTotal /= intBuffer;
+                              }
+                            }
+
+                            function handleSymbol(value) {
+                              switch (value) {
+                                case "C":
+                                  buffer = "0";
+                                  runningTotal = 0;
+                                  break;
+                                case "=":
+                                  if (previousOperator === null) {
+                                    // need two numbers to do math
+                                    return;
+                                  }
+                                  flushOperation(parseInt(buffer));
+                                  previousOperator = null;
+                                  buffer = +runningTotal;
+                                  runningTotal = 0;
+                                  break;
+                                case "←":
+                                  if (buffer.length === 1) {
+                                    buffer = "0";
+                                  } else {
+                                    buffer = buffer.substring(0, buffer.length - 1);
+                                  }
+                                  break;
+                                case "+":
+                                case "-":
+                                case "×":
+                                case "÷":
+                                  handleMath(value);
+                                  break;
+                              }
+                            }
+
+                            function rerender() {
+                              screen.innerText = buffer;
+                            }
+
+                            function init() {
+                              document.querySelector(".calc-buttons").addEventListener("click", function() {
+                                buttonClick(event.target.innerText);
+                              });
+                            }
+
+                            init();
+                      </style>
+                      
+                      <!-- Blanking This For A Sec 
+                      <style>
                             let runningTotal = 0;
                             let buffer = "0";
                             let previousOperator = null;
@@ -381,75 +484,15 @@
                                 screen.innerText = buffer;
                             }
 
-                        </style>
+                        </style> 
+                        -->
+                      
                     </div>
-               </article>
                     
-                    
-                    
-                  <!-- Delete the files associated with this Slider:
-
-                  <div class="slideshow-container">
-                      <div class="mySlides1">
-                        <img src="alisonludick.github.io/fia_snow.jpg" style="width:100%">
-                      </div>
-
-                      <div class="mySlides1">
-                        <img src="alisonludick.github.io/fia_summer.jpg" style="width:100%">
-                      </div>
-
-                      <div class="mySlides1">
-                        <img src="alisonludick.github.io/fia_relax.jpg" style="width:100%">
-                      </div>
-
-                      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-                   </div>
-                  <br>
-                  
-                   <div class="slideshow-container">
-                      <div class="mySlides2">
-                        <img src="alisonludick.github.io/tuktuk.jpg" style="width:100%">
-                      </div>
-
-                      <div class="mySlides2">
-                        <img src="alisonludick.github.io/beach.jpg" style="width:100%">
-                      </div>
-
-                      <div class="mySlides2">
-                        <img src="alisonludick.github.io/canoes.jpg" style="width:100%">
-                      </div>
-
-                      <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-                   </div> 
-
-                    <script>
-                    var slideIndex = [1,1];
-                    var slideId = ["mySlides1", "mySlides2"]
-                    showSlides(1, 0);
-                    showSlides(1, 1);
-
-                    function plusSlides(n, no) {
-                      showSlides(slideIndex[no] += n, no);
-                    }
-
-                    function showSlides(n, no) {
-                      var i;
-                      var x = document.getElementsByClassName(slideId[no]);
-                      if (n > x.length) {slideIndex[no] = 1}    
-                      if (n < 1) {slideIndex[no] = x.length}
-                      for (i = 0; i < x.length; i++) {
-                         x[i].style.display = "none";  
-                      }
-                      x[slideIndex[no]-1].style.display = "block";  
-                    }
-                    </script> -->
+               </article>        
                    
-                    
-             
-       
-        
+                             
+                                       
             </main>
             <div id="textbutton">
                 <p>
