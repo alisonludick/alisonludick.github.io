@@ -15,6 +15,7 @@ section {
 .main-body {
     padding: 0.5em;
     margin: 0.5em;
+    line-height: 1.5;
 }
 
 figcaption.mindmap {
@@ -268,6 +269,7 @@ body {
 .info-button {
     padding: 0.5em;
     margin:0.5em;
+    line-height: 1.5;
 }
 
 div.footerlink {
