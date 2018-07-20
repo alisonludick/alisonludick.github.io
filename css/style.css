@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 header {
     background-color: black;
     color: #FFFFFF;
@@ -5,12 +9,6 @@ header {
     font-family: fantasy;
     text-align: center;    
 }
-
-/*
-section {
-    padding: 0.5em;
-    margin: 0.5em;
-}*/
 
 .main-body {
     padding: 0.5em;
@@ -192,16 +190,9 @@ img {vertical-align: middle;}
 
 /* Calculator */
 
-* {
-  box-sizing: border-box;
-}
-
-body {
+.calc {
   padding: 0;
   margin: 0;
-}
-
-.calc {
   width: 500px;
   background-color: black;
   color: white;
