@@ -191,6 +191,7 @@ img {vertical-align: middle;}
 /* Calculator */
 
 .calc {
+  box-sizing: border-box !important;
   padding: 0 !important;
   margin: 0 !important;
   width: 400px;
