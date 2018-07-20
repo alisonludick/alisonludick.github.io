@@ -10,12 +10,11 @@ header {
     text-align: center;    
 }
 
-/*
 .main-body {
     padding: 0.5em;
     margin: 0.5em;
     line-height: 1.5;
-}*/
+}
 
 figcaption.mindmap {
     font-family: fantasy;
@@ -195,7 +194,7 @@ img {vertical-align: middle;}
   box-sizing: border-box !important;
   padding: 0 !important;
   margin: 0 !important;
-  width: 400px;
+  width: 35%;
   background-color: black;
   color: white;
 }
