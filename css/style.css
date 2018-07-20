@@ -292,7 +292,7 @@ img {vertical-align: middle;}
 
 /* Copy and Paste */
 
-*, :after, :before {
+* {
   box-sizing: border-box;
 }
 
