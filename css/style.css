@@ -237,6 +237,7 @@ img {vertical-align: middle;}
 }
 
 .screen {
+    background-color: black;
     color: white;
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
