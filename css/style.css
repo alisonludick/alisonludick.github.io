@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 header {
     background-color: black;
     color: #FFFFFF;
@@ -48,10 +53,6 @@ article > time {
 article > p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0em;
-}
-
-main {
-    padding: 0.2em;
 }
 
 footer {
@@ -191,9 +192,6 @@ img {vertical-align: middle;}
 /* Calculator */
 
 .calc {
-  box-sizing: border-box !important;
-  padding: 0 !important;
-  margin: 0 !important;
   width: 400px;
   background-color: black;
   color: white;
