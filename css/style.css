@@ -249,7 +249,8 @@ img {vertical-align: middle;}
   display: flex;
   /* align-content: stretch; */
   align-content: space-between;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
   margin-bottom: 0.5%;
 }
 
