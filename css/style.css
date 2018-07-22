@@ -247,7 +247,8 @@ img {vertical-align: middle;}
 
 .calc-button-row {
   display: flex;
-  align-content: stretch;
+  /* align-content: stretch; */
+  align-content: space-between;
   justify-content: space-between;
   margin-bottom: 0.5%;
 }
