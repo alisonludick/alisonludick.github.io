@@ -282,14 +282,14 @@ body {
   background-color: #dd8d37;
 }
 
-.calc-button-row {
+.calc-row {
   display: flex;
   align-content: stretch;
   justify-content: space-between;
   margin-bottom: 0.5%;
 }
 
-.calc-button-row:last-child {
+.calc-row:last-child {
   padding-bottom: 0;
 }
 
